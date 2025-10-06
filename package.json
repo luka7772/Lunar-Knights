@@ -1,17 +1,15 @@
 {
-  "homepage": "https://lukacho7772.github.io/Lunar-Knights",
+  "homepage": "https://github.com/luka7772/Lunar-Knights.git",
   "name": "gym-project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  },
+  "start": "vite",
+  "build": "vite build",
+  "deploy": "gh-pages -d dist", 
+  "predeploy": "npm run build"
+},
   "dependencies": {
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
