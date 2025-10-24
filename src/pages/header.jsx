@@ -21,7 +21,7 @@ export function Header() {
             <Link to="/login" className="account-name" style={{ color: 'white' }}>
               Log in
             </Link>
-        <img src="/images/profile2.png" alt="Profile" className="profile-image" />
+        <img src={`${import.meta.env.BASE_URL}images/profile2.png`} alt="Profile" className="profile-image" />
         <div className="new-comments">
           <Link to="/account">Account</Link> 
           <Link to="/comunity">Comunity</Link>

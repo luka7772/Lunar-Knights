@@ -1,6 +1,8 @@
 import './contactus.css';
 
 export function ContactUs() {
+  const base = import.meta.env.BASE_URL;
+
   return (
     <div className="contact-us-main">
       <div className="contact-left-section">
@@ -29,15 +31,15 @@ export function ContactUs() {
         <p className="social-title">Follow Us on Social Media</p>
         <div className="social-links">
           <a href="https://www.instagram.com/lukach0777/" target="_blank" rel="noopener noreferrer">
-            <img src="images/instagram.jpg" className="social-logo" alt="Instagram" />
+            <img src={`${base}images/instagram.jpg`} className="social-logo" alt="Instagram" />
           </a>
 
           <a href="https://www.facebook.com/luka.jijavadze.387368" target="_blank" rel="noopener noreferrer">
-            <img src="images/facebook.jpg" className="social-logo" alt="Facebook" />
+            <img src={`${base}images/facebook.jpg`} className="social-logo" alt="Facebook" />
           </a>
 
           <a href="https://discord.com/users/770907116974243850" target="_blank" rel="noopener noreferrer">
-            <img src="images/discord.png" className="social-logo" alt="Discord" />
+            <img src={`${base}images/discord.png`} className="social-logo" alt="Discord" />
           </a>
         </div>
       </div>

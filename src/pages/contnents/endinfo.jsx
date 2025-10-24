@@ -1,12 +1,15 @@
 import './endinfo.css';
 
 export function Endinfo() {
+  const base = import.meta.env.BASE_URL;
+
   return (
     <div className="main-section">
       <div className="left-section">
         <div className="name">
-          <img src="./vite.jpg" className='main-logo' />
-          Lunar Knights</div>
+          <img src={`${import.meta.env.BASE_URL}vite.jpg`} className="main-logo" alt="Logo" />
+          Lunar Knights
+        </div>
         <p className="description">
           Save your progress, complete challenges, share your experience with others, get personalized workouts and meals.
         </p>
@@ -15,19 +18,17 @@ export function Endinfo() {
       <div className="middle-section">
         <p className="follow-us-title">Follow Us</p>
         <div className="social-links">
-                  <a href="https://www.instagram.com/lukach0777/" target="_blank">
-              <img src="images/instagram.jpg" className="social-logo" alt="Instagram" />
-            </a>
+          <a href="https://www.instagram.com/lukach0777/" target="_blank">
+            <img src={`${base}images/instagram.jpg`} className="social-logo" alt="Instagram" />
+          </a>
 
-            <a href="https://www.facebook.com/luka.jijavadze.387368" target="_blank">
-              <img src="images/facebook.jpg" className="social-logo" alt="Facebook" />
-            </a>
+          <a href="https://www.facebook.com/luka.jijavadze.387368" target="_blank">
+            <img src={`${base}images/facebook.jpg`} className="social-logo" alt="Facebook" />
+          </a>
 
-            <a href="https://discord.com/users/770907116974243850" target="_blank">
-              <img src="images/discord.png" className="social-logo" alt="Discord" />
-            </a>
-            
-
+          <a href="https://discord.com/users/770907116974243850" target="_blank">
+            <img src={`${base}images/discord.png`} className="social-logo" alt="Discord" />
+          </a>
         </div>
       </div>
 
